@@ -1,0 +1,42 @@
+.ascii-container{
+    /* height: 800px; Set the desired height */
+    /* width: 700px; */
+    /* overflow: auto; */
+    border: 2px solid red;
+    /* font-size: xx-small; */
+    background-color: rgb(0, 0, 0);
+    color: white;
+    /* display: absolute; */
+    /* right:0; */
+}
+
+
+img{
+    max-height: 600px; 
+    max-width: 800px;
+}
+
+.combined-display{
+    display: flex;
+    /* height: 80vh; */
+    justify-content: space-around;
+}
+
+.image-display{
+    flex:1;
+    /* overflow: hidden; */
+    /* max-width: 400px; */
+    margin: 10px;
+}
+
+.art-display{
+    flex:1;
+    /* min-width:  */
+    /* width: 200px; */
+}
+
+@media (max-width: 767px) {
+    .combined-display{
+        flex-direction: column;
+    }
+}
